@@ -187,6 +187,7 @@
       <div class="closing-actions__buttons">
         <a class="button button--closing" href="#manifiesto">leer artículos</a>
         <a class="button button--closing" href="#calculo">simular implementación</a>
+        <button class="button button--closing" id="downloadPdf" type="button">descargar PDF</button>
         <a class="button button--closing button--plant" href="https://pay.sumup.com/b2c/QKE87Z0O" target="_blank" rel="noopener noreferrer" aria-label="Regar la planta con un aporte voluntario de mil pesos">
           <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
             <path d="M16 27V14"/>
@@ -198,7 +199,7 @@
           <small>$1.000</small>
         </a>
       </div>
-      <p class="closing-actions__note">El aporte es voluntario y no modifica el acceso, el contenido ni el funcionamiento del proyecto.</p>
+      <p class="closing-actions__note">El PDF se genera desde la versión vigente del modelo. El aporte es voluntario y no modifica el acceso, el contenido ni el funcionamiento del proyecto.</p>
     </section>
   </main>
 
@@ -209,5 +210,8 @@
 
   <script src="assets/js/data.js?v=20261007-1"></script>
   <script src="assets/js/app.js?v=20261007-1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pdfmake@0.2.12/build/pdfmake.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pdfmake@0.2.12/build/vfs_fonts.js"></script>
+  <script src="assets/js/pdf.js?v=20261007-1"></script>
 </body>
 </html>
