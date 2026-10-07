@@ -1,0 +1,23 @@
+@page{size:A4;margin:18mm 16mm 18mm}
+*{box-shadow:none!important;text-shadow:none!important}
+html,body,.site-grid,.map-section,.profiles-section,.principle-band,.calc-panel,.calc-output,.readiness-layout>div,.readiness-result,.wave,.method-grid article,.flow-node,.module-card{background:#fff!important;color:#000!important}
+.site-grid{background-image:none!important}
+.site-header,.reading-progress,.map-toolbar,.closing-actions,.site-footer,.hero-meta,.toc,.margin-notes{display:none!important}
+.page-shell,.map-section .page-shell{max-width:none!important;padding:0!important}
+.hero{min-height:auto!important;padding:0 0 12mm!important;border-color:#000!important;display:block!important}
+.hero:before{display:none!important}
+.hero h1,.hero h1 span,.hero-lead,.section-head h2,.section-head p,.section-code,.article-number,.manifest-paragraph p,.module-body h3,.module-body p,.module-meta b,.module-code,.module-code strong,.metric,.metric span,.metric strong,.metric small,.readiness-result,.readiness-result p,.wave,.wave p,.method-grid p,.profile-table th,.profile-table td{color:#000!important}
+.principle-band{border:1px solid #000!important;margin:8mm 0!important}
+.principle-grid{padding:6mm!important;display:block!important}
+.manifest-layout{display:block!important;padding:10mm 0!important}
+.manifest-article{break-inside:avoid-page!important;padding-bottom:8mm!important}
+.manifest-article+.manifest-article,.section-head,.panel-head,.readiness-row,.cost-row,.gate-item,.wave p,.module-meta{border-color:#bbb!important}
+.manifest-paragraph.is-target{background:#fff!important;box-shadow:none!important}
+.map-section,.profiles-section,.calc-section,.method-section{padding:0!important}
+.dependency-map,.module-grid,.calc-grid,.readiness-layout,.wave-grid,.method-grid,.profile-table-wrap{background:#fff!important;border-color:#bbb!important}
+.module-card,.flow-node,.metric,.metric--primary{background:#fff!important;color:#000!important;border:1px solid #bbb!important}
+.filter,.button{color:#000!important;border-color:#000!important}
+.formula-box,.form-note{background:#fff!important;color:#000!important;border-color:#000!important}
+.profile-table th{background:#f5f5f5!important}
+.profile-table-wrap{overflow:visible!important}
+a{color:#000!important;text-decoration:none!important}
