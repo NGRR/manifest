@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Manifiesto y mapa técnico para la restauración del tejido social y la transformación democrática de la riqueza.">
+  <title>manifest — tejido social / riqueza / implementación</title>
+  <link rel="stylesheet" href="assets/css/site.css?v=20261007-1">
+</head>
+<body class="site-grid">
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio"><i aria-hidden="true"></i><span>manifest</span><small>/ implementation node</small></a>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a href="#manifiesto">Manifiesto</a>
+      <a href="#mapa">Mapa</a>
+      <a href="#calculo">Cálculo</a>
+      <a href="#perfiles">Perfiles</a>
+      <a href="https://github.com/NGRR/manifest">Git</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero page-shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">SYS.MNF // PUBLIC MODEL // V1.0</p>
+        <h1 id="hero-title">riqueza <span>→ autonomía</span></h1>
+        <p class="hero-lead">Un manifiesto normativo y un sistema técnico para convertir criterios de tejido social, cultura cívica, poder económico distribuido y cooperación en decisiones de campo medibles.</p>
+        <div class="hero-actions">
+          <a class="button button--dark" href="#manifiesto">leer artículos</a>
+          <a class="button" href="#calculo">simular implementación</a>
+        </div>
+      </div>
+      <aside class="hero-meta" aria-label="Especificaciones">
+        <div class="axis">ART / <strong id="heroArticles">25</strong><br>PAR / <strong id="heroParagraphs">75</strong><br>MOD / <strong id="heroModules">10</strong><br>PROFILES / <strong id="heroProfiles">14</strong></div>
+        <div>MODEL / PARAMETRIC<br>CURRENCY / CLP<br>HORIZON / 365D<br>STATUS / WORKING</div>
+      </aside>
+    </section>
+
+    <section class="principle-band">
+      <div class="page-shell principle-grid">
+        <span>REGLA / 25.03</span>
+        <p id="premiseText"></p>
+      </div>
+    </section>
+
+    <section class="manifest-section page-shell" id="manifiesto" aria-labelledby="manifest-title">
+      <header class="section-head">
+        <div><span class="section-code">01 / NORMATIVE LAYER</span><h2 id="manifest-title">Manifiesto</h2></div>
+        <p>Los artículos fijan el criterio. Cada párrafo tiene un identificador permanente para que los módulos técnicos puedan declarar exactamente qué mandato implementan.</p>
+      </header>
+      <div class="manifest-layout">
+        <aside class="toc" aria-label="Índice de artículos">
+          <span class="toc-title">ARTICULADO / 25</span>
+          <ol id="articleToc"></ol>
+        </aside>
+        <div class="manifest-body" id="manifestBody"></div>
+        <aside class="margin-notes" aria-label="Reglas de lectura">
+          <div class="margin-note"><b>ART.</b> Unidad normativa principal.</div>
+          <div class="margin-note"><b>§</b> Párrafo direccionable y trazable.</div>
+          <div class="margin-note"><b>Mxx</b> Módulo que convierte criterio en operación.</div>
+          <div class="margin-note"><b>Gate</b> Condición que debe cumplirse antes de ejecutar.</div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="map-section" id="mapa" aria-labelledby="map-title">
+      <div class="page-shell">
+        <header class="section-head section-head--dark">
+          <div><span class="section-code">02 / IMPLEMENTATION LAYER</span><h2 id="map-title">Mapa técnico</h2></div>
+          <p>Diez módulos convierten el articulado en una secuencia de diagnóstico, capacidad social, capacidad económica, propiedad e institucionalización. Ningún módulo se ejecuta sin sus dependencias y compuertas.</p>
+        </header>
+        <div class="map-toolbar">
+          <button class="filter is-active" data-filter="all">todos</button>
+          <button class="filter" data-filter="field">campo</button>
+          <button class="filter" data-filter="economic">economía</button>
+          <button class="filter" data-filter="institution">institución</button>
+        </div>
+        <div class="dependency-map" id="dependencyMap" aria-label="Dependencias de implementación"></div>
+        <div class="module-grid" id="moduleGrid"></div>
+      </div>
+    </section>
+
+    <section class="calc-section page-shell" id="calculo" aria-labelledby="calc-title">
+      <header class="section-head">
+        <div><span class="section-code">03 / PARAMETRIC MODEL</span><h2 id="calc-title">Cálculo y aplicabilidad</h2></div>
+        <p>La precisión se obtiene haciendo visibles los supuestos. Población, muestra, salarios, carga, alcance y contingencia son variables editables; el resultado no se presenta como tarifa universal.</p>
+      </header>
+
+      <div class="calc-grid">
+        <form class="calc-panel" id="budgetForm">
+          <div class="panel-head"><span>SIM / COST MODEL</span><span>CLP</span></div>
+          <label>Población objetivo<input type="number" id="population" min="1000" step="1000"></label>
+          <label>Participantes directos esperados<input type="number" id="participants" min="50" step="50"></label>
+          <label>Habitantes por célula territorial<input type="number" id="cellPopulation" min="5000" step="5000"></label>
+          <label>Margen de error muestral (%)<input type="number" id="marginError" min="1" max="15" step="0.5"></label>
+          <label>Unidad salarial base / IMM (CLP)<input type="number" id="minWage" min="1" step="1000"></label>
+          <label>Carga sobre remuneración (%)<input type="number" id="loadPct" min="0" max="80" step="1"></label>
+          <label>Overhead institucional (%)<input type="number" id="overheadPct" min="0" max="50" step="1"></label>
+          <label>Contingencia (%)<input type="number" id="contingencyPct" min="0" max="50" step="1"></label>
+          <p class="form-note">Base inicial Chile 2026: IMM $553.553. Se usa sólo como unidad de escala para el modelo salarial y puede reemplazarse.</p>
+        </form>
+
+        <div class="calc-output">
+          <div class="panel-head"><span>OUTPUT / PILOT</span><span id="budgetStatus">LIVE</span></div>
+          <div class="metric-grid">
+            <article class="metric"><span>muestra mínima</span><strong id="sampleSize">—</strong><small>95% confianza / p=.5</small></article>
+            <article class="metric"><span>células territoriales</span><strong id="cells">—</strong><small>ceil(N / tamaño célula)</small></article>
+            <article class="metric"><span>meses-persona</span><strong id="personMonths">—</strong><small>suma de M01–M10</small></article>
+            <article class="metric metric--primary"><span>costo total</span><strong id="totalCost">—</strong><small>personal + operación + tech + reservas</small></article>
+            <article class="metric"><span>costo / participante</span><strong id="costParticipant">—</strong><small>total / alcance directo</small></article>
+            <article class="metric"><span>costo / habitante</span><strong id="costCapita">—</strong><small>total / población objetivo</small></article>
+          </div>
+          <div class="formula-box">
+            <span>FORMULA / COST</span>
+            <code>C = [Σ(meses<sub>r</sub> × multiplicador<sub>r</sub> × IMM × carga) + operación + tecnología] × (1 + overhead + contingencia)</code>
+          </div>
+          <div class="cost-breakdown" id="costBreakdown"></div>
+        </div>
+      </div>
+
+      <div class="readiness-layout">
+        <div>
+          <div class="panel-head"><span>READINESS / GATED SCORE</span><span>0—100</span></div>
+          <div id="readinessControls" class="readiness-controls"></div>
+        </div>
+        <aside class="readiness-result">
+          <span class="readiness-label">ÍNDICE DE PREPARACIÓN</span>
+          <strong id="readinessScore">—</strong>
+          <h3 id="readinessState">—</h3>
+          <p id="readinessExplanation"></p>
+          <div id="gateList" class="gate-list"></div>
+          <div class="readiness-rule">
+            <b>Ventana óptima</b>
+            <span>Índice ≥85 y todas las compuertas críticas ≥70.</span>
+          </div>
+        </aside>
+      </div>
+
+      <div class="timeline-block">
+        <div class="panel-head"><span>CRITICAL PATH / 365D</span><span>W0—W4</span></div>
+        <div id="waveGrid" class="wave-grid"></div>
+      </div>
+    </section>
+
+    <section class="profiles-section" id="perfiles" aria-labelledby="profiles-title">
+      <div class="page-shell">
+        <header class="section-head">
+          <div><span class="section-code">04 / PEOPLE DEPENDENCIES</span><h2 id="profiles-title">Perfiles y dependencia</h2></div>
+          <p>El trabajo de campo y el estudio no se definen por títulos aislados sino por competencias, entregables y dependencias. Los multiplicadores salariales son unidades de planificación editables mediante el IMM del calculador.</p>
+        </header>
+        <div class="profile-table-wrap">
+          <table class="profile-table">
+            <thead><tr><th>ID</th><th>Perfil</th><th>Tipo</th><th>× IMM</th><th>Competencias</th><th>Entrega</th><th>Depende de</th></tr></thead>
+            <tbody id="profileRows"></tbody>
+          </table>
+        </div>
+        <div class="allocation-block">
+          <div class="panel-head"><span>RESOURCE PLAN / CURRENT SIMULATION</span><span>ROLE-MONTHS</span></div>
+          <div id="allocationRows" class="allocation-rows"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="method-section page-shell" id="metodo" aria-labelledby="method-title">
+      <header class="section-head">
+        <div><span class="section-code">05 / METHOD & LIMITS</span><h2 id="method-title">Método</h2></div>
+        <p>El mapa separa criterio normativo, evidencia, cálculo y decisión. La implementación sólo avanza cuando las cuatro capas son coherentes.</p>
+      </header>
+      <div class="method-grid">
+        <article><span>01</span><h3>Norma</h3><p>El artículo declara qué debe ocurrir y qué condición no es aceptable.</p></article>
+        <article><span>02</span><h3>Evidencia</h3><p>El diagnóstico demuestra si el problema existe, su escala y quiénes están involucrados.</p></article>
+        <article><span>03</span><h3>Cálculo</h3><p>Recursos, muestra, personal y costos se producen mediante fórmulas con supuestos visibles.</p></article>
+        <article><span>04</span><h3>Decisión</h3><p>La compuerta define implementar, pilotear, preparar o no ejecutar.</p></article>
+      </div>
+      <div class="formula-box formula-box--wide">
+        <span>FORMULA / SAMPLE</span>
+        <code>n₀ = z²·p(1−p)/e² &nbsp;→&nbsp; n = n₀ / [1 + (n₀−1)/N]</code>
+      </div>
+      <p class="method-limit">“Condición perfecta” no se trata como una certeza teórica. Se operacionaliza como una ventana óptima: datos, legitimidad, capacidad institucional, factibilidad legal, manejo de conflicto y recursos superan umbrales previamente definidos. Si una compuerta crítica falla, el sistema no recomienda ejecución aunque el promedio general sea alto.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>manifest / implementation node<br>tejido social · cultura · riqueza · autonomía</div>
+    <div>MODEL / PARAMETRIC<br>VERSION / 1.0.0</div>
+  </footer>
+
+  <script src="assets/js/data.js?v=20261007-1"></script>
+  <script src="assets/js/app.js?v=20261007-1"></script>
+</body>
+</html>
