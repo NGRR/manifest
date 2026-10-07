@@ -66,7 +66,7 @@
     const paragraphCount = (D.articles || []).reduce((sum,a) => sum + a.paras.length, 0);
 
     const manifesto = [];
-    (D.articles || []).forEach((article, index) => {
+    (D.articles || []).forEach(article => {
       manifesto.push({
         stack:[
           {text:`ART. ${article.n}`, style:'articleNumber'},
@@ -80,8 +80,7 @@
             margin:[0,0,0,10]
           }))
         ],
-        margin:[0,0,0,18],
-        pageBreak: index === 0 ? undefined : undefined
+        margin:[0,0,0,18]
       });
       manifesto.push(rule());
     });
@@ -219,7 +218,7 @@
           [{text:'CÉLULAS TERRITORIALES', style:'metricLabel'}, {text:number.format(b.cells), style:'metric', alignment:'right'}],
           [{text:'MESES-PERSONA', style:'metricLabel'}, {text:number.format(b.totalRoleMonths), style:'metric', alignment:'right'}],
           [{text:'COSTO TOTAL BASE', style:'metricLabel'}, {text:money.format(b.total), style:'metric', alignment:'right'}]
-        ]}, layout:{hLineColor:'#34373c', vLineColor:'#34373c', paddingTop:()=>8, paddingBottom:()=>8, paddingLeft:()=>8, paddingRight:()=>8}, margin:[0,0,0,18]},
+        ]}, layout:{hLineColor:()=> '#34373c', vLineColor:()=> '#34373c', paddingTop:()=>8, paddingBottom:()=>8, paddingLeft:()=>8, paddingRight:()=>8}, margin:[0,0,0,18]},
         {text:'C = [Σ(meses_r × multiplicador_r × IMM × carga) + operación + tecnología] × (1 + overhead + contingencia)', style:'smallBody', margin:[0,0,0,7]},
         {text:'Muestra: n0 = z²·p(1-p)/e²; n = n0 / [1 + (n0-1)/N].', style:'smallBody'},
 
